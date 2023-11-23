@@ -1,1 +1,12 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.info-list-wrapper {
+  text-align: left;
+}
+.info-list-wrapper .ul-element {
+  list-style-image: url(../images/icon-list.svg);
+}/*# sourceMappingURL=styles.css.map */

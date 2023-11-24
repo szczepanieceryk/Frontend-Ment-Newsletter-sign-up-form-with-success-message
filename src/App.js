@@ -1,5 +1,4 @@
 import Main from "./Layouts/Main";
-import Header from "./Components/Header";
 import "./App.css";
 
 const App = () => {

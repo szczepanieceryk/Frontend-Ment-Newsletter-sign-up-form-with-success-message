@@ -1,6 +1,8 @@
 import InfoList from "../Components/InfoList";
 import Header from "../Components/Header";
 
+import bgcImageoMobile from "../images/illustration-sign-up-mobile.svg";
+
 const Main = () => {
   const headerTitle = "Stay updated!";
   const headerBanner =
@@ -13,10 +15,15 @@ const Main = () => {
   ];
 
   return (
-    <div className="main-wrapper">
-      <Header title={headerTitle} banner={headerBanner} />
-      <InfoList points={infoPoints} />
-    </div>
+    <>
+      <div className="design-wrapper">
+        <img src={bgcImageoMobile} alt="colorful design icon" />
+      </div>
+      <div className="main-wrapper">
+        <Header title={headerTitle} banner={headerBanner} />
+        <InfoList points={infoPoints} />
+      </div>
+    </>
   );
 };
 

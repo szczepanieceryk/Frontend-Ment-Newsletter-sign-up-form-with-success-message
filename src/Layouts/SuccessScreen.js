@@ -4,7 +4,7 @@ import successIcon from "../images/icon-success.svg";
 
 import "../styles/_SuccessScreen.scss";
 
-const SuccessScreen = ({ mail }) => {
+const SuccessScreen = ({ userMail }) => {
   return (
     <div className="success-screen-wrapper">
       <div className="success-content">
@@ -15,13 +15,12 @@ const SuccessScreen = ({ mail }) => {
         </h1>
         <p className="success-message">
           A confirmation email has been sent to{" "}
-          <strong>
-            <a href="/">{mail}</a>
-          </strong>
-          . Please open it and click the button inside to confirm your
-          subscription.
+          <strong className="user-mail">{userMail}</strong>. Please open it and
+          click the button inside to confirm your subscription.
         </p>
-        <Button className="btn-form-submit">Dismiss message</Button>
+        <a href="/">
+          <Button className="btn-form-submit">Dismiss message</Button>
+        </a>
       </div>
     </div>
   );

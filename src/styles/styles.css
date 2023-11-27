@@ -67,9 +67,6 @@
   margin: 1em 0;
   font-weight: bold;
 }
-.success-screen-wrapper .success-content .success-message {
-  font-weight: bold;
-}
 .success-screen-wrapper .success-content .btn-form-submit {
   margin: 1.5 auto;
   padding: 1.5em;

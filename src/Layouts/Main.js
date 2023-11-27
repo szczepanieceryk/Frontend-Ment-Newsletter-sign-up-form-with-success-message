@@ -6,7 +6,7 @@ import NewsletterForm from "./NewsletterForm";
 
 import "../styles/_Main.scss";
 
-const Main = () => {
+const Main = ({ setUserMail, setIsMailSubmitted }) => {
   const headerTitle = "Stay updated!";
   const headerBanner =
     "Join 60,000+ product managers receiving monthly updates on:";
@@ -25,7 +25,10 @@ const Main = () => {
       <div className="main-info">
         <Header title={headerTitle} banner={headerBanner} />
         <InfoList points={infoPoints} />
-        <NewsletterForm />
+        <NewsletterForm
+          setUserMail={setUserMail}
+          setIsMailSubmitted={setIsMailSubmitted}
+        />
       </div>
     </div>
   );

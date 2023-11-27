@@ -1,6 +1,15 @@
 import Button from "react-bootstrap/Button";
 import "../styles/_Form.scss";
-const NewsletterForm = () => {
+const NewsletterForm = ({ setUserMail, setIsMailSubmitted }) => {
+  const handleUserMail = (e) => {
+    setUserMail(e.target.value);
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    setIsMailSubmitted(true);
+  };
+
   return (
     <div className="form-wrapper">
       <form action="">
@@ -11,9 +20,14 @@ const NewsletterForm = () => {
             type="email"
             id="newsletter-email-input-id"
             placeholder="email@company.com"
+            onChange={handleUserMail}
           />
         </label>
-        <Button type="submitt" className="btn-form-submit">
+        <Button
+          onClick={handleFormSubmit}
+          type="submit"
+          className="btn-form-submit"
+        >
           Subscribe to monthly newsletter
         </Button>
       </form>

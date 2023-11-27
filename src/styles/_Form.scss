@@ -15,10 +15,24 @@
       width: 100%;
       border: 0.5px solid colors.$grey;
       border-radius: 8px;
+      &.error {
+        outline: none;
+        border: 1px solid colors.$error;
+        background-color: colors.$error-bgc;
+        color: colors.$error;
+      }
+    }
+    .error-msg {
+      display: block;
+      color: colors.$error;
+      font-weight: bold;
+      font-size: 12px;
+      height: 12px;
     }
   }
+
   .btn-form-submit {
-    margin: 1.5em auto;
+    margin: 1em auto 1.5em;
     padding: 1.5em;
     width: 100%;
     border-radius: 10px;

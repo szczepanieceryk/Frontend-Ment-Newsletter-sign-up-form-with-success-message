@@ -1,0 +1,26 @@
+@use "./abstracts/colors";
+
+.success-screen-wrapper {
+  padding: 1.5em;
+  .success-content {
+    .success-title {
+      margin: 1em 0;
+      font-weight: bold;
+    }
+    .success-message {
+      font-weight: bold;
+    }
+    .btn-form-submit {
+      margin: 1.5 auto;
+      padding: 1.5em;
+      border-radius: 10px;
+      width: 100%;
+      border: none;
+      background-color: colors.$dark-slate-grey;
+      transition: 0.3s;
+      &:hover {
+        background-color: colors.$tomato;
+      }
+    }
+  }
+}

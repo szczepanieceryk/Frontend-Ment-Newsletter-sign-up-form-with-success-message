@@ -4,6 +4,8 @@ import Header from "../Components/Header";
 import bgcImageoMobile from "../images/illustration-sign-up-mobile.svg";
 import NewsletterForm from "./NewsletterForm";
 
+import "../styles/_Main.scss";
+
 const Main = () => {
   const headerTitle = "Stay updated!";
   const headerBanner =
@@ -16,16 +18,16 @@ const Main = () => {
   ];
 
   return (
-    <>
+    <div className="main-wrapper">
       <div className="design-wrapper">
         <img src={bgcImageoMobile} alt="colorful design icon" />
       </div>
-      <div className="main-wrapper">
+      <div className="main-info">
         <Header title={headerTitle} banner={headerBanner} />
         <InfoList points={infoPoints} />
         <NewsletterForm />
       </div>
-    </>
+    </div>
   );
 };
 

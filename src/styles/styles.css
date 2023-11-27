@@ -4,8 +4,31 @@
   box-sizing: border-box;
 }
 
+.main-wrapper .design-wrapper img {
+  width: 100%;
+}
+.main-wrapper .main-info {
+  margin: 0 auto;
+  max-width: 350px;
+}
+
+.header-wrapper {
+  margin: 1em 0;
+}
+.header-wrapper .header-title {
+  margin: 0 0 0.3em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 35px;
+}
+.header-wrapper .header-banner {
+  color: hsl(234deg, 29%, 20%);
+  font-weight: bold;
+}
+
 .info-list-wrapper {
   text-align: left;
+  font-weight: bold;
 }
 .info-list-wrapper .ul-element {
   list-style-image: url(../images/icon-list.svg);

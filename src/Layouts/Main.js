@@ -2,6 +2,7 @@ import InfoList from "../Components/InfoList";
 import Header from "../Components/Header";
 
 import bgcImageoMobile from "../images/illustration-sign-up-mobile.svg";
+import NewsletterForm from "./NewsletterForm";
 
 const Main = () => {
   const headerTitle = "Stay updated!";
@@ -22,6 +23,7 @@ const Main = () => {
       <div className="main-wrapper">
         <Header title={headerTitle} banner={headerBanner} />
         <InfoList points={infoPoints} />
+        <NewsletterForm />
       </div>
     </>
   );

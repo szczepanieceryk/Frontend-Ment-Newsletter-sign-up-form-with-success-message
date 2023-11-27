@@ -1,0 +1,26 @@
+@use "./abstracts/colors";
+
+.form-wrapper {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 350px;
+  .newsletter-label {
+    display: block;
+    color: colors.$dark-slate-grey;
+    font-weight: bold;
+    .newsletter-input {
+      display: block;
+      padding: 1em;
+      width: 100%;
+      border: 0.5px solid colors.$grey;
+      border-radius: 8px;
+    }
+  }
+  .btn-form-submit {
+    margin: 1.5em auto;
+    padding: 1.5em;
+    width: 100%;
+    border-radius: 10px;
+    background-color: colors.$dark-slate-grey;
+  }
+}

@@ -1,12 +1,19 @@
+import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import "../styles/_Form.scss";
+
 const NewsletterForm = ({ setUserMail, setIsMailSubmitted }) => {
+  // Local state to store emal passed to input
+  // To update global app state with email only when form is submitted
+  const [email, setEmail] = useState();
+
   const handleUserMail = (e) => {
-    setUserMail(e.target.value);
+    setEmail(e.target.value);
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    setUserMail(email);
     setIsMailSubmitted(true);
   };
 

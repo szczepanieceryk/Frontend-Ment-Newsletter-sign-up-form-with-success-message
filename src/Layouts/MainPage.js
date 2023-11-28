@@ -6,7 +6,7 @@ import NewsletterForm from "./NewsletterForm";
 
 import "../styles/_Main.scss";
 
-const Main = ({ setUserMail, setIsMailSubmitted }) => {
+const MainPage = ({ setUserMail, setIsMailSubmitted }) => {
   const headerTitle = "Stay updated!";
   const headerBanner =
     "Join 60,000+ product managers receiving monthly updates on:";
@@ -34,4 +34,4 @@ const Main = ({ setUserMail, setIsMailSubmitted }) => {
   );
 };
 
-export default Main;
+export default MainPage;

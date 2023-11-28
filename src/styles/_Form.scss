@@ -36,6 +36,11 @@
     padding: 1.5em;
     width: 100%;
     border-radius: 10px;
+    border: none;
     background-color: colors.$dark-slate-grey;
+    transition: 0.4s;
+    &:hover {
+      background-color: colors.$tomato;
+    }
   }
 }

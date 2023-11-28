@@ -1,12 +1,35 @@
+import { useState, useEffect } from "react";
 import InfoList from "../Components/InfoList";
 import Header from "../Components/Header";
-
-import bgcImageoMobile from "../images/illustration-sign-up-mobile.svg";
 import NewsletterForm from "./NewsletterForm";
 
-import "../styles/_Main.scss";
+import bgcImageMobile from "../images/illustration-sign-up-mobile.svg";
+import bgcImageDesktop from "../images/illustration-sign-up-desktop.svg";
+
+import "../styles/_MainPage.scss";
 
 const MainPage = ({ setUserMail, setIsMailSubmitted }) => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [windowWidth]);
+
+  const getImageSize = () => {
+    if (windowWidth < 576) {
+      return bgcImageMobile;
+    } else {
+      return bgcImageDesktop;
+    }
+  };
+
   const headerTitle = "Stay updated!";
   const headerBanner =
     "Join 60,000+ product managers receiving monthly updates on:";
@@ -20,9 +43,9 @@ const MainPage = ({ setUserMail, setIsMailSubmitted }) => {
   return (
     <div className="main-wrapper">
       <div className="design-wrapper">
-        <img src={bgcImageoMobile} alt="colorful design icon" />
+        <img src={getImageSize()} alt="colorful design" />
       </div>
-      <div className="main-info">
+      <div className="main-body">
         <Header title={headerTitle} banner={headerBanner} />
         <InfoList points={infoPoints} />
         <NewsletterForm

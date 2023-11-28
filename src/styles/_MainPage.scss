@@ -1,0 +1,32 @@
+.main-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "body image";
+    align-items: center;
+  }
+  .design-wrapper {
+    img {
+      width: 100%;
+      grid-area: image;
+    }
+  }
+  .main-body {
+    margin: 0 auto;
+    padding: 0 0.5em;
+    max-width: 500px;
+    grid-area: body;
+    @media screen and (min-width: 768px) {
+      padding: 0 1em;
+
+      & > * {
+        margin: 2.5em 0;
+      }
+    }
+    @media screen and (min-width: 992px) {
+      margin-right: 2em;
+    }
+  }
+}

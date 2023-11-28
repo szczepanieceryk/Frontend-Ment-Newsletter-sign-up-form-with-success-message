@@ -3,5 +3,8 @@
   font-weight: bold;
   .ul-element {
     list-style-image: url(../images/icon-list.svg);
+    .li-element {
+      margin: 1em 0;
+    }
   }
 }

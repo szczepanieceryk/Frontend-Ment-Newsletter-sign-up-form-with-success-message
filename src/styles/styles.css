@@ -4,82 +4,46 @@
   box-sizing: border-box;
 }
 
+.main-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .main-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "body image";
+    align-items: center;
+  }
+}
 .main-wrapper .design-wrapper img {
   width: 100%;
+  grid-area: image;
 }
-.main-wrapper .main-info {
+.main-wrapper .main-body {
   margin: 0 auto;
-  max-width: 350px;
+  padding: 0 0.5em;
+  max-width: 500px;
+  grid-area: body;
 }
-
-.header-wrapper {
-  margin: 1em 0;
+@media screen and (min-width: 768px) {
+  .main-wrapper .main-body {
+    padding: 0 1em;
+  }
+  .main-wrapper .main-body > * {
+    margin: 2.5em 0;
+  }
 }
-.header-wrapper .header-title {
-  margin: 0 0 0.3em;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 35px;
-}
-.header-wrapper .header-banner {
-  color: hsl(234deg, 29%, 20%);
-  font-weight: bold;
-}
-
-.info-list-wrapper {
-  text-align: left;
-  font-weight: bold;
-}
-.info-list-wrapper .ul-element {
-  list-style-image: url(../images/icon-list.svg);
-}
-
-.form-wrapper {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 350px;
-  font-weight: bold;
-}
-.form-wrapper .newsletter-label {
-  display: block;
-  color: hsl(234deg, 29%, 20%);
-  font-weight: bold;
-}
-.form-wrapper .newsletter-label .newsletter-input {
-  display: block;
-  padding: 1em;
-  width: 100%;
-  border: 0.5px solid hsl(231deg, 7%, 60%);
-  border-radius: 8px;
-}
-.form-wrapper .newsletter-label .newsletter-input.error {
-  outline: none;
-  border: 1px solid hsl(0deg, 100%, 67%);
-  background-color: rgba(255, 87, 87, 0.3);
-  color: hsl(0deg, 100%, 67%);
-}
-.form-wrapper .newsletter-label .error-msg {
-  display: block;
-  color: hsl(0deg, 100%, 67%);
-  font-weight: bold;
-  font-size: 12px;
-  height: 12px;
-}
-.form-wrapper .btn-form-submit {
-  margin: 1em auto 1.5em;
-  padding: 1.5em;
-  width: 100%;
-  border-radius: 10px;
-  border: none;
-  background-color: hsl(234deg, 29%, 20%);
-  transition: 0.4s;
-}
-.form-wrapper .btn-form-submit:hover {
-  background-color: hsl(4deg, 100%, 67%);
+@media screen and (min-width: 992px) {
+  .main-wrapper .main-body {
+    margin-right: 2em;
+  }
 }
 
 .success-screen-wrapper {
+  margin: 0 auto;
   padding: 1.5em;
+  max-width: 400px;
 }
 .success-screen-wrapper .success-content .success-title {
   margin: 1em 0;

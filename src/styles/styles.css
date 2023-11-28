@@ -70,7 +70,12 @@
   padding: 1.5em;
   width: 100%;
   border-radius: 10px;
+  border: none;
   background-color: hsl(234deg, 29%, 20%);
+  transition: 0.4s;
+}
+.form-wrapper .btn-form-submit:hover {
+  background-color: hsl(4deg, 100%, 67%);
 }
 
 .success-screen-wrapper {

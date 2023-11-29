@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import InfoList from "../Components/InfoList";
 import Header from "../Components/Header";
 import NewsletterForm from "../Layouts/NewsletterForm";
+import Footer from "../Layouts/Footer";
 
 import bgcImageMobile from "../images/illustration-sign-up-mobile.svg";
 import bgcImageDesktop from "../images/illustration-sign-up-desktop.svg";
@@ -53,6 +54,7 @@ const MainPage = ({ setUserMail, setIsMailSubmitted }) => {
           setIsMailSubmitted={setIsMailSubmitted}
         />
       </div>
+      <Footer />
     </div>
   );
 };

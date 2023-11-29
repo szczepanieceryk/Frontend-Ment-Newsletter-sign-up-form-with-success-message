@@ -17,4 +17,11 @@
       background: linear-gradient(to right, #c91a89, colors.$tomato);
     }
   }
+  .footer-wrapper {
+    font-size: 11px;
+    text-align: center;
+    .footer-links {
+      color: colors.$link;
+    }
+  }
 }

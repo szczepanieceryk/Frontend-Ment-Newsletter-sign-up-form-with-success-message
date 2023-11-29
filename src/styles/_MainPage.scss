@@ -6,7 +6,9 @@
   @media screen and (min-width: brakepoints.$brakepoint-tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "body image";
+    grid-template-areas:
+      "body image"
+      "footer footer";
     align-items: center;
   }
   .design-wrapper {
@@ -33,6 +35,12 @@
     }
     @media screen and (min-width: brakepoints.$brakepoint-desktop) {
       margin-right: 2em;
+    }
+  }
+  .footer-wrapper {
+    grid-area: footer;
+    @media screen and (min-width: brakepoints.$brakepoint-desktop) {
+      margin: 2em auto 0;
     }
   }
 }

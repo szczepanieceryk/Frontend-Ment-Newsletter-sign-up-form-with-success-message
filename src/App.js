@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Main from "./Pages/MainPage";
+import MainPage from "./Pages/MainPage";
 import SuccessScreen from "./Layouts/SuccessScreen";
 import "./styles/styles.css";
 
@@ -13,7 +13,7 @@ const App = () => {
       {isMailSubmitted ? (
         <SuccessScreen userMail={userMail} />
       ) : (
-        <Main
+        <MainPage
           setUserMail={setUserMail}
           setIsMailSubmitted={setIsMailSubmitted}
         />

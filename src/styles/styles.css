@@ -22,6 +22,13 @@
 .app-wrapper .btn-form-submit:hover {
   background: linear-gradient(to right, #c91a89, hsl(4deg, 100%, 67%));
 }
+.app-wrapper .footer-wrapper {
+  font-size: 11px;
+  text-align: center;
+}
+.app-wrapper .footer-wrapper .footer-links {
+  color: hsl(228deg, 45%, 44%);
+}
 
 .main-wrapper {
   max-width: 1000px;
@@ -31,7 +38,7 @@
   .main-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "body image";
+    grid-template-areas: "body image" "footer footer";
     align-items: center;
   }
 }
@@ -62,6 +69,14 @@
 @media screen and (min-width: 992px) {
   .main-wrapper .main-body {
     margin-right: 2em;
+  }
+}
+.main-wrapper .footer-wrapper {
+  grid-area: footer;
+}
+@media screen and (min-width: 992px) {
+  .main-wrapper .footer-wrapper {
+    margin: 2em auto 0;
   }
 }
 

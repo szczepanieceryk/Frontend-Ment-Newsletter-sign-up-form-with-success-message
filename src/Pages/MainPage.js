@@ -23,7 +23,7 @@ const MainPage = ({ setUserMail, setIsMailSubmitted }) => {
   }, [windowWidth]);
 
   const getImageSize = () => {
-    if (windowWidth < 576) {
+    if (windowWidth < 768) {
       return bgcImageMobile;
     } else {
       return bgcImageDesktop;

@@ -1,6 +1,20 @@
+@use "./abstracts/colors";
+
 .app-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  .btn-form-submit {
+    position: relative;
+    margin: 1em auto 1.5em;
+    padding: 1.5em;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: colors.$dark-slate-grey;
+    &:hover {
+      background: linear-gradient(to right, #c91a89, colors.$tomato);
+    }
+  }
 }

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Main from "./Pages/MainPage";
 import SuccessScreen from "./Layouts/SuccessScreen";
-import "./App.css";
+import "./styles/styles.css";
 
 const App = () => {
   const [userMail, setUserMail] = useState("");

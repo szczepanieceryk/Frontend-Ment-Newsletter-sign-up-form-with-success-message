@@ -12,7 +12,11 @@
   .design-wrapper {
     img {
       width: 100%;
+      max-height: 350px;
       grid-area: image;
+      @media screen and (min-width: brakepoints.$brakepoint-tablet) {
+        max-height: 800px;
+      }
     }
   }
   .main-body {

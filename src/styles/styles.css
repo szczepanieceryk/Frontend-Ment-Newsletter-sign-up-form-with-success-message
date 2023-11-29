@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  background-color: hsl(234deg, 29%, 20%);
 }
 .app-wrapper .btn-form-submit {
   position: relative;
@@ -33,9 +34,13 @@
 .main-wrapper {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0.5em;
+  border-radius: 20px;
+  background-color: hsl(0deg, 0%, 100%);
 }
 @media screen and (min-width: 768px) {
   .main-wrapper {
+    padding: 2em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "body image" "footer footer";

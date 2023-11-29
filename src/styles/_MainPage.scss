@@ -1,9 +1,14 @@
 @use "./abstracts/brakepoints";
+@use "./abstracts/colors";
 
 .main-wrapper {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0.5em;
+  border-radius: 20px;
+  background-color: colors.$white;
   @media screen and (min-width: brakepoints.$brakepoint-tablet) {
+    padding: 2em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:

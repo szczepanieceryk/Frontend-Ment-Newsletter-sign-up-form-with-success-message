@@ -1,7 +1,9 @@
+@use "./abstracts/brakepoints";
+
 .main-wrapper {
   max-width: 1000px;
   margin: 0 auto;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: brakepoints.$brakepoint-tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "body image";
@@ -18,14 +20,14 @@
     padding: 0 0.5em;
     max-width: 500px;
     grid-area: body;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: brakepoints.$brakepoint-tablet) {
       padding: 0 1em;
 
       & > * {
         margin: 2.5em 0;
       }
     }
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: brakepoints.$brakepoint-desktop) {
       margin-right: 2em;
     }
   }

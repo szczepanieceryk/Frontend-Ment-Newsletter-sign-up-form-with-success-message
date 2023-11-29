@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import InfoList from "../Components/InfoList";
 import Header from "../Components/Header";
-import NewsletterForm from "./NewsletterForm";
+import NewsletterForm from "../Layouts/NewsletterForm";
 
 import bgcImageMobile from "../images/illustration-sign-up-mobile.svg";
 import bgcImageDesktop from "../images/illustration-sign-up-desktop.svg";

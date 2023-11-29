@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Main from "./Layouts/MainPage";
+import Main from "./Pages/MainPage";
 import SuccessScreen from "./Layouts/SuccessScreen";
 import "./App.css";
 

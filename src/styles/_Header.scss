@@ -1,15 +1,18 @@
 @use "./abstracts/colors";
+@use "./abstracts/brakepoints";
 
 .header-wrapper {
   margin: 1em 0;
   .header-title {
-    margin: 0 0 0.3em;
-    font-weight: bold;
+    margin: 0.5em 0 0.5em;
+    font-weight: 700;
     letter-spacing: 1px;
-    font-size: 35px;
+    font-size: 40px;
+    @media screen and (min-width: brakepoints.$brakepoint-tablet) {
+      font-size: 50px;
+    }
   }
   .header-banner {
     color: colors.$dark-slate-grey;
-    font-weight: bold;
   }
 }

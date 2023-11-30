@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,18 +11,21 @@
   justify-content: center;
   min-height: 100vh;
   background-color: hsl(234deg, 29%, 20%);
+  font-family: "Roboto", Arial sans-serif;
 }
 .app-wrapper .btn-form-submit {
   position: relative;
   margin: 1em auto 1.5em;
   padding: 1.5em;
   width: 100%;
+  font-weight: bold;
   border-radius: 10px;
   border: none;
   background-color: hsl(234deg, 29%, 20%);
 }
 .app-wrapper .btn-form-submit:hover {
   background: linear-gradient(to right, #c91a89, hsl(4deg, 100%, 67%));
+  box-shadow: 0 10px 30px hsl(4deg, 100%, 67%);
 }
 .app-wrapper .footer-wrapper {
   font-size: 11px;
@@ -89,8 +93,15 @@
   margin: 0 auto;
   padding: 1.5em;
   max-width: 400px;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 25px;
 }
 .success-screen-wrapper .success-content .success-title {
   margin: 1em 0;
-  font-weight: bold;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .success-screen-wrapper .success-content .success-title {
+    font-size: 48px;
+  }
 }/*# sourceMappingURL=styles.css.map */

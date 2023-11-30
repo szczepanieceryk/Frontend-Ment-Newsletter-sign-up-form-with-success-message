@@ -1,13 +1,19 @@
 @use "./abstracts/colors";
+@use "./abstracts/brakepoints";
 
 .success-screen-wrapper {
   margin: 0 auto;
   padding: 1.5em;
   max-width: 400px;
+  background-color: colors.$white;
+  border-radius: 25px;
   .success-content {
     .success-title {
       margin: 1em 0;
-      font-weight: bold;
+      font-weight: 700;
+      @media screen and (min-width: brakepoints.$brakepoint-tablet) {
+        font-size: 48px;
+      }
     }
   }
 }

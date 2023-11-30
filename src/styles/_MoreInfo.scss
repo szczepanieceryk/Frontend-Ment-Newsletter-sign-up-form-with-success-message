@@ -1,10 +1,20 @@
+@use "./abstracts/brakepoints";
+
 .info-list-wrapper {
   text-align: left;
   font-weight: bold;
   .ul-element {
     list-style-image: url(../images/icon-list.svg);
     .li-element {
-      margin: 1em 0;
+      margin: 0 0 0.5em;
+      .li-span-element {
+        margin-left: 0.5em;
+        display: inline-block;
+        vertical-align: middle;
+        @media screen and (min-width: brakepoints.$brakepoint-tablet) {
+          vertical-align: text-bottom;
+        }
+      }
     }
   }
 }

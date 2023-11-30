@@ -1,4 +1,5 @@
 @use "./abstracts/colors";
+@use "./abstracts/fonts";
 
 .app-wrapper {
   display: flex;
@@ -6,16 +7,19 @@
   justify-content: center;
   min-height: 100vh;
   background-color: colors.$dark-slate-grey;
+  font-family: fonts.$main-font;
   .btn-form-submit {
     position: relative;
     margin: 1em auto 1.5em;
     padding: 1.5em;
     width: 100%;
+    font-weight: bold;
     border-radius: 10px;
     border: none;
     background-color: colors.$dark-slate-grey;
     &:hover {
       background: linear-gradient(to right, #c91a89, colors.$tomato);
+      box-shadow: 0 10px 30px colors.$tomato;
     }
   }
   .footer-wrapper {
